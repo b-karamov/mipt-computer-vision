@@ -1,0 +1,10 @@
+h5py
+numpy
+scipy
+matplotlib
+seaborn
+tqdm
+scikit-learn
+torch
+gdown
+nbformat
