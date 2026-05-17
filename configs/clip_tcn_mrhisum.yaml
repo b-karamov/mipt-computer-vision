@@ -1,0 +1,46 @@
+seed: 42
+device: auto
+dataset:
+  name: mrhisum
+  metadata: data/raw/mrhisum_metadata.csv
+  gt: data/raw/mrhisum_gt.h5
+  videos_dir: data/videos/mrhisum
+  manifest: data/manifests/mrhisum_subset.csv
+features:
+  cache_dir: data/features/clip_vit_b32_1fps
+  encoder: ViT-B-32
+  pretrained: openai
+  fps: 1.0
+  image_size: 224
+  batch_size: 32
+model:
+  input_dim: 512
+  hidden_dim: 64
+  levels: 2
+  kernel_size: 3
+  dropout: 0.4
+  causal: true
+  lookahead_steps: 0
+train:
+  epochs: 20
+  lr: 0.0001
+  weight_decay: 0.003
+  lambda_rank: 0.5
+  target: summary
+  loss: auto
+  smoothness_weight: 0.05
+  split_strategy: reshuffle
+  split_seed: 20260517
+  val_ratio: 0.1
+  test_ratio: 0.1
+  soft_score_weight: 0.0
+  segment_window: 4
+  segment_stride: 1
+  patience: 5
+postprocess:
+  smooth_alpha: 0.35
+  start_threshold: 0.65
+  end_threshold: 0.45
+  min_duration_sec: 2.0
+  merge_gap_sec: 1.5
+  max_summary_ratio: 0.15

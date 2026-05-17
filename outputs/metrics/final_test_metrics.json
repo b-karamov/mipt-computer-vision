@@ -1,0 +1,18 @@
+{
+  "segment_base": {
+    "n": 98,
+    "f1_top15_summary_mean": 0.28485017525618916,
+    "summary_spearman_mean": 0.13672249964285715,
+    "score_spearman_mean": 0.07501197151632652,
+    "top1_hit_summary_rate": 0.37755102040816324,
+    "jitter_mean": 0.02585435255991333
+  },
+  "hparam_val_winner_levels3": {
+    "n": 98,
+    "f1_top15_summary_mean": 0.28032617379584146,
+    "summary_spearman_mean": 0.142469215027551,
+    "score_spearman_mean": 0.09652440152448978,
+    "top1_hit_summary_rate": 0.3979591836734694,
+    "jitter_mean": 0.01940108648363539
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "video": "samples/demo.mp4",
+  "intervals": [
+    {
+      "start": 60.06,
+      "end": 64.064,
+      "score": 0.8167
+    },
+    {
+      "start": 92.092,
+      "end": 102.102,
+      "score": 0.8772
+    },
+    {
+      "start": 111.111,
+      "end": 115.115,
+      "score": 0.7846
+    }
+  ]
+}

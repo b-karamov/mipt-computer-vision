@@ -6,14 +6,21 @@
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+tests/
 
 # datasets
-datasets/
+/datasets/
+/data/
 *.h5
 
 # Build artifacts
 *.log
-
-# Generated docs
-*.pdf
-*.docx
+outputs_*/
+/outputs/streamlit_demo/
+/outputs/predictions/
+/outputs/research/*.json
+*.mp4
+*.mov
+*.m4v
+!samples/demo.mp4
+!outputs/demo/highlight_preview.mp4
